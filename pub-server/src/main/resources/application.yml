@@ -1,0 +1,14 @@
+server:
+  port: 8091
+
+spring:
+  application:
+    name: pub-server
+
+logging:
+  level:
+    root: info
+    org.springframework: info
+#    org.springframework.security.web.FilterChainProxy: DEBUG
+#    org.springframework.security.web.access.intercept.AuthorizationFilter: DEBUG
+    com.dolmengi: debug

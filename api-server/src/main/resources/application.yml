@@ -1,0 +1,26 @@
+server:
+  port: 8090
+
+spring:
+  application:
+    name: api-server
+  threads:
+    virtual:
+      enabled: true
+  jpa:
+    open-in-view: false
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+
+urls:
+  pub-server: ws://localhost:8091/stomp
+
+logging:
+  level:
+    root: info
+    org.springframework: info
+    org.apache.kafka: warn
+#    org.springframework.security.web.FilterChainProxy: DEBUG
+#    org.springframework.security.web.access.intercept.AuthorizationFilter: DEBUG
+    com.dolmengi: debug

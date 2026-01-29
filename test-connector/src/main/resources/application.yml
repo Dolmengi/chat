@@ -1,0 +1,17 @@
+server:
+  port: 8094
+
+spring:
+  application:
+    name: test-connector
+
+urls:
+  api-server: http://localhost:8090
+
+logging:
+  level:
+    root: info
+    org.springframework: info
+    org.springframework.web.socket: DEBUG
+#    org.springframework.messaging: TRACE
+    com.dolmengi: debug
