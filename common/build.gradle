@@ -1,0 +1,6 @@
+version = '0.0.1-SNAPSHOT'
+description = 'Chat Common Library'
+
+dependencies {
+    implementation 'com.github.ben-manes.caffeine:caffeine:3.2.3'
+}
